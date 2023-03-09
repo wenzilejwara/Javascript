@@ -8,7 +8,8 @@ function calculate() {
   {
   num1 = 0;
   }
-  else if(num2.length == "")
+  
+  if(num2.length == "")
   {
     num2 = 0;
   }
