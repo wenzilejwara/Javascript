@@ -10,21 +10,20 @@
 <body>
     <div style="margin: 20px;">
         <label>Number One</label>
-        <input id="numberOne" type="number" placeholder="Number One" />
+        <input onclick ="calculate()" id="numberOne" type="number" placeholder="Number One" />
     </div>
     <div style="margin: 20px;">
         <label>Number Two</label>
-        <input id="numberTwo" type="number" placeholder="Number Two" />
+        <input onclick ="calculate()" id="numberTwo" type="number" placeholder="Number Two" />
     </div>
     <div style="margin: 20px;">
-        <Button onclick = "onAddClick()">Add</Button>
-        <Button onclick = "onSubract()">Subtract</Button>
-        <Button onclick = "onDivide()">Divide</Button>
-        <Button onclick = "onMultiply()">Multiple</Button>
     </div>    
 
     <div style="margin: 20px;">
-        <label id="result">YOUR OUTPUT HERE</label>
+        Add: <label id="add"> 0 </label> </br>
+        Subtract:<label id="subtract"> 0 </label></br>
+        Divide: <label id="divide"> 0</label></br>
+        Multiply: <label id="multiply"> 0</label></br>
     </div>
 </body>
 </html>

@@ -1,44 +1,30 @@
 
+function calculate() {
 
-function onAddClick() {
+  var num1 = (document.getElementById("numberOne").value);
+  var num2 = (document.getElementById("numberTwo").value);
 
- var num1 = parseInt (document.getElementById("numberOne").value);
- var num2 = parseInt (document.getElementById("numberTwo").value);
+  if (num1.length == "")
+  {
+  num1 = 0;
+  }
+  else if(num2.length == "")
+  {
+    num2 = 0;
+  }
 
-var result = num1 + num2;
-   
-document.getElementById("result").innerHTML = result;
-   
-}
-function onSubract() {
 
-  var num1 = parseInt(document.getElementById("numberOne").value);
-  var num2 = parseInt(document.getElementById("numberTwo").value);
- 
-  var result = num1 - num2;
+  var result = parseInt(num1) + parseInt(num2);
+  document.getElementById("add").innerHTML = result;
+
+  var result = parseInt(num1) - parseInt(num2);
+  document.getElementById("subtract").innerHTML = result;
+
+  var result = parseInt(num1) * parseInt(num2);
+  document.getElementById("multiply").innerHTML = result;
+
+  var result = parseInt(num1) / parseInt(num2);
+  document.getElementById("divide").innerHTML = result;
     
- document.getElementById("result").innerHTML = result;
-    
-}
-
-function onMultiply() {
-
-  var num1 = parseInt(document.getElementById("numberOne").value);
-  var num2 = parseInt(document.getElementById("numberTwo").value);
- 
-  var result = num1 * num2;
-    
- document.getElementById("result").innerHTML = result;
-}
-
-
-function onDivide() {
-
-  var num1 = parseInt (document.getElementById("numberOne").value);
-  var num2 = parseInt (document.getElementById("numberTwo").value);
- 
-  var result = num1 / num2;
-    
- document.getElementById("result").innerHTML = result;
 }
 
